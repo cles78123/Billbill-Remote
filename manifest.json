@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDesc__",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "default_locale": "zh_TW",
   "icons": {
     "128": "public/images/icon128.png"

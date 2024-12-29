@@ -69,7 +69,11 @@ export class IndexVideoList {
     }
 
     removeElement(element) {
-        element.parentNode.style.display = 'none';
+        if (element.parentNode.classList.contains("feed-card")) {
+            element.parentNode.remove();
+        } else {
+            element.remove();
+        }
     }
 
     processVideos(conditions, timestamp) {
