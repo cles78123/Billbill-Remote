@@ -1,0 +1,93 @@
+/* 通用样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 容器样式 */
+.container {
+    width: 1500px;
+    max-width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 标题样式 */
+h1 {
+    font-size: 1.4em;
+    color: #2d3e50;
+    text-align: left;
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* 标题中的图标样式 */
+h1 i {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 8px;
+    cursor: help;
+    transition: color 0.3s ease;
+}
+
+h1 i:hover {
+    color: #ffbc00;
+}
+
+/* 文本输入框样式 */
+.title-input {
+    width: 100%;
+    height: 150px;
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.title-input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+    outline: none;
+}
+
+/* 帮助文本样式 */
+.help-text {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #eef5ff;
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 4px solid #4caf50;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .title-input {
+        font-size: 14px;
+    }
+}

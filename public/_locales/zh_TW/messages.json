@@ -1,0 +1,71 @@
+{
+  "extensionName": {
+    "message": "bilibili遥控器"
+  },
+  "extensionDesc": {
+    "message": "防止 bilibili 首頁變成亂七八糟的內容，封鎖各種不想看到的影片，通過封鎖讓 bilibili 繼續推送新的影片。"
+  },
+  "blockVideo": {
+    "message": "屏蔽影片名稱"
+  },
+  "blockVideoNote": {
+    "message": "透過完整標題屏蔽 //EX:雷軍 則會封鎖名稱為雷軍的影片"
+  },
+  "blockVideoKeyword": {
+    "message": "屏蔽影片名稱關鍵字"
+  },
+  "blockVideoKeywordNote": {
+    "message": "透過關鍵字屏蔽 //EX:雷軍 則會封鎖所有名稱帶有雷軍的影片"
+  },
+  "blockViewCount": {
+    "message": "屏蔽觀看數低於設定量"
+  },
+  "blockViewCountNote": {
+    "message": "透過輸入最大值的數字屏蔽 //EX:1000 則會封鎖所有觀看量低於1000的影片(超過1萬時請以11000.12000等等為單位輸入)"
+  },
+  "blockChannel": {
+    "message": "屏蔽頻道"
+  },
+  "blockChannelNote": {
+    "message": "透過完整頻道屏蔽 //EX:雷軍 則會封鎖頻道名稱為雷軍的頻道"
+  },
+  "blockChannelKeyword": {
+    "message": "屏蔽頻道關鍵字"
+  },
+  "blockChannelKeywordNote": {
+    "message": "透過關鍵字屏蔽 //EX:雷軍 則會封鎖所有頻道名稱帶有雷軍的頻道"
+  },
+  "blockWatchedVideos": {
+    "message": "屏蔽已看過的影片"
+  },
+  "limitOccurrencesInChannel": {
+    "message": "同频道最多出現"
+  },
+  "limitOccurrencesInChannelNote": {
+    "message": "同一個頻道最多能顯示多少影片在首頁"
+  },
+  "triggerOnExceedCount": {
+    "message": "出現超過"
+  },
+  "triggerOnExceedCountNote": {
+    "message": "在首頁中出現幾次後自動封鎖(7天自動刪除一次資料)"
+  },
+  "confirm2": {
+    "message": "確定"
+  },
+  "optionsNote": {
+    "message": "GitHub:<a href=\"https://github.com/cles78123/Billbill-Remote\" target=\"_blank\">https://github.com/cles78123/Billbill-Remote</a><p>E-Mail:cles78123@gmail.com</p>有任何問題或討論都可以聯繫我"
+  },
+  "textareaNote": {
+    "message": "在這裡輸入內容  範例\n雷軍\n雷總"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "confirm": {
+    "message": "確定"
+  },
+  "count": {
+    "message": "次"
+  }
+}

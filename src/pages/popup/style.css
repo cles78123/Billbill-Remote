@@ -1,0 +1,168 @@
+/* 通用样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    width: 250px; /* 设定宽度 */
+    max-width: 400px; /* 最大宽度 */
+    min-width: 250px; /* 最小宽度 */
+    height: 400px; /* 高度设置为合理范围 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Title 样式 */
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 使标题居中 */
+    background-color: #2d3e50;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.title label {
+    display: flex;
+    align-items: center;
+}
+
+.settings-icon {
+    color: white;
+    font-size: 1.2em;
+    margin-left: 8px;
+    text-decoration: none;
+}
+
+.settings-icon:hover {
+    color: #ffbc00;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* Switch 容器 */
+.switch-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto; /* 允许滚动 */
+    flex-grow: 1;
+}
+
+.switch-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    white-space: nowrap; /* 防止换行 */
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-right: 10px; /* 添加间距 */
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Switch 标签样式 */
+.switch-label {
+    font-size: 0.9em;
+    display: inline-flex; /* 强制标签在一行内 */
+    align-items: center;
+    flex-grow: 1; /* 确保标签占据剩余空间 */
+}
+
+.switch-label i {
+    margin-left: 5px;
+    color: #666;
+    cursor: help;
+}
+
+.switch-label i:hover {
+    color: #ffbc00;
+}
+
+/* Tooltip 样式 */
+.switch-item i {
+    font-size: 1em;
+}
+
+/* Hover & Focus 状态 */
+.switch-item:hover .switch-label {
+    color: #1a73e8;
+}
+
+.switch-item input:focus + .slider {
+    box-shadow: 0 0 5px #4caf50;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .settings-icon {
+        margin-top: 10px;
+    }
+
+    .switch-container {
+        margin: 10px;
+    }
+
+    .switch-item {
+        /*flex-direction: column;*/
+        align-items: flex-start;
+    }
+
+    .switch-label {
+        margin-left: 0;
+        margin-top: 3px;
+    }
+}
